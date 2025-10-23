@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-your-chat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h3>Edit your chat: <%= Chat._id %></h3>
+    <p>This message was sent from <%= Chat.from %> to <%= Chat.to %> on <%= Chat.created_at.toString().split(" ")[1] %> <%= Chat.created_at.toString().split(" ")[2] %> <%= Chat.created_at.toString().split(" ")[3] %> (<%= Chat.created_at.toString().split(" ")[4] %>)</p>
+    <form class="d-inline-flex flex-column bd-highlight mb-3" action="/chats/<%= Chat._id %>?_method=PUT" method="POST">
+        <textarea class="bg-dark bg-gradient" name="newMsg" id="message-area" rows="10" cols="50"><%= Chat.msg %></textarea>
+        <br>
+        <button class="btn btn-outline-secondary">Submit</button>
+    </form>
+</body>
+</html>

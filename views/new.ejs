@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write-new-chat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h3>Write a new chat</h3>
+    <form class="d-inline-flex flex-column bd-highlight mb-3" action="/chats" method="post">
+        <input class="bg-dark bg-gradient" type="text" placeholder="Your name" name="from">
+        <textarea class="bg-dark bg-gradient" name="msg" id="message-area" rows="10" cols="50" placeholder="Write your message here..."></textarea>
+        <label for="message-area">max-50 characters</label>
+        <input class="bg-dark" type="text" placeholder="Reciever name" name="to">
+        <button class="btn btn-outline-secondary">Submit</button>
+    </form>
+</body>
+</html>
