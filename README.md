@@ -10,12 +10,12 @@ A simple **CRUD** web app built using **Node.js**, **Express**, **MongoDB**, **E
 2. **Clone** your forked repo:
 
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone git@github.com:vaibhav-raj-codes/project-1.git
    ```
 3. **Navigate to the project directory:**
 
    ```bash
-   cd <repo-name>
+   cd project-1
    ```
 4. **Install dependencies:**
 
