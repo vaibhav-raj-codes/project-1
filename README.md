@@ -6,7 +6,7 @@ A simple **CRUD** web app built using **Node.js**, **Express**, **MongoDB**, **E
 
 ### 🧭 How to Run the Project
 
-1. **Fork** this repository → [mygithubprojectlink](mygithubprojectlink)
+1. **Fork** this repository → [mygithubprojectlink](https://github.com/vaibhav-raj-codes/project-1/tree/main)
 2. **Clone** your forked repo:
 
    ```bash
